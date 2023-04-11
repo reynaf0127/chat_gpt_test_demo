@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input/Output Demo</title>
+  </head>
+  <body>
+    <h1>Input/Output Demo</h1>
+    <form method="POST">
+      <label for="input_text">Input Text:</label>
+      <input type="text" name="input_text" id="input_text">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    {% if output_text %}
+      <h2>Output Text:</h2>
+      <p>{{ output_text }}</p>
+    {% endif %}
+  </body>
+</html>
